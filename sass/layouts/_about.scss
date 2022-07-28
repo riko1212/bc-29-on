@@ -1,0 +1,34 @@
+.about__container {
+  display: flex;
+  gap: 64px;
+}
+
+.pict-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about__pre-title {
+  margin-bottom: var(--typical-margin);
+}
+
+.about__title {
+  color: #303030;
+  margin-bottom: var(--typical-margin);
+}
+.about__after-title {
+  color: #555555;
+  margin-bottom: var(--typical-margin);
+}
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+.about__btn {
+  color: var(--second-btn-color);
+}

@@ -1,0 +1,15 @@
+.gallery-pre-title {
+  margin-bottom: 44px;
+  color: #303030;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery-item {
+  flex-basis: calc(25% - 30px);
+  margin: 15px;
+}

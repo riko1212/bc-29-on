@@ -24,37 +24,41 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a href="" class="header-logo animate__animated animate__wobble">
-          <svg class="header-logo-icon" width="68" height="55">
+      <div class="container header__container">
+        <a href="" class="logo header__logo">
+          <svg class="logo__icon" width="68" height="55">
             <use href="./img/icons.svg#icon-logo"></use>
           </svg>
         </a>
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="#about" class="header-link link">About</a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link link">About</a>
             </li>
-            <li class="header-item">
-              <a href="#prices" class="header-link link">Services and prices</a>
+            <li class="navigation__item">
+              <a href="#prices" class="navigation__link link"
+                >Services and prices</a
+              >
             </li>
-            <li class="header-item">
-              <a href="#barbers" class="header-link link current">Barbers</a>
+            <li class="navigation__item">
+              <a href="#barbers" class="navigation__link link current"
+                >Barbers</a
+              >
             </li>
-            <li class="header-item">
-              <a href="#contacts" class="header-link link">Contacts</a>
+            <li class="navigation__item">
+              <a href="#contacts" class="navigation__link link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <a href="tel:+380441111111" class="header-tel link"
+        <div class="connect">
+          <a href="tel:+380441111111" class="connect__tel link"
             >+38 044 111 11 11</a
           >
-          <button type="button" data-modal-open class="btn header-btn">
+          <button type="button" data-modal-open class="btn connect__btn">
             Online-booking
           </button>
         </div>
@@ -62,34 +66,36 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <div class="hero-soc">
-            <ul class="hero-list list">
-              <li class="hero-item">
+        <div class="container hero__container">
+          <div class="soc">
+            <ul class="soc__list list">
+              <li class="soc__item">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="hero-link link"
+                  class="soc__link link"
                   >Instagram</a
                 >
               </li>
-              <li class="hero-item">
+              <li class="soc__item">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="hero-link link"
+                  class="soc__link link"
                   >Youtube</a
                 >
               </li>
             </ul>
           </div>
 
-          <div class="hero-content">
-            <p class="pre-title hero-pre-title">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title" data-aos="zoom-out-down">BarberShop</h1>
-            <p class="after-title hero-after-title">
+          <div class="hero__content">
+            <p class="pre-title hero__pre-title pre-title--color-light">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title" data-aos="zoom-out-down">BarberShop</h1>
+            <p class="after-title hero__after-title">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
@@ -97,9 +103,9 @@
         </div>
       </section>
       <section class="about section">
-        <div class="container">
-          <ul class="about-list list">
-            <li class="about-item">
+        <div class="container about__container">
+          <ul class="pict-list list">
+            <li class="pict-list__item">
               <img
                 src="./img/about-img-1.jpeg"
                 alt="haircut"
@@ -107,7 +113,7 @@
                 height="445"
               />
             </li>
-            <li class="about-item">
+            <li class="pict-list__item">
               <img
                 src="./img/about-img-2.jpeg"
                 alt="haircut"
@@ -116,72 +122,74 @@
               />
             </li>
           </ul>
-          <div class="about-content">
-            <p class="pre-title about-pre-title">About</p>
-            <h2 class="title about-title" data-aos="flip-left">
+          <div class="about__content">
+            <p class="pre-title about__pre-title pre-title--color-dark">
+              About
+            </p>
+            <h2 class="title about__title" data-aos="flip-left">
               Best Barbershop in your city
             </h2>
-            <p class="after-title about-after-title">
+            <p class="after-title about__after-title">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </p>
-            <p class="about-text">
+            <p class="about__text">
               We are a team that never stops at what has been achieved and are
               thirsty for changes. And when you fall into the hands of our
               master, you will never be the same again. We are a team that is
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="btn about-btn">Online-booking</button>
+            <button type="button" class="btn about__btn">Online-booking</button>
           </div>
         </div>
       </section>
       <section id="prices" class="prices section">
         <div class="container">
-          <p class="pre-title prices-pre-title">
+          <p class="pre-title prices__pre-title pre-title--color-light">
             Spend your time with the best masters
           </p>
-          <h2 class="title prices-title">Services and prices</h2>
+          <h2 class="title prices__title">Services and prices</h2>
           <div class="prices-wrap">
             <ul class="prices-list list">
-              <li class="prices-item">
-                <p class="prices-item-text">Men’s haircut</p>
-                <p class="prices-item-text">from 300 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Men’s haircut</p>
+                <p class="prices-list__text">from 300 uah.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Beard trim</p>
-                <p class="prices-item-text">from 300 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Beard trim</p>
+                <p class="prices-list__text">from 300 uah.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Mustache trim</p>
-                <p class="prices-item-text">from 200 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Mustache trim</p>
+                <p class="prices-list__text">from 200 uah.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Straight razor shave</p>
-                <p class="prices-item-text">from 200 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Straight razor shave</p>
+                <p class="prices-list__text">from 200 uah.</p>
               </li>
             </ul>
             <ul class="prices-list list">
-              <li class="prices-item">
-                <p class="prices-item-text">Men’s haircut</p>
-                <p class="prices-item-text">from 300 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Men’s haircut</p>
+                <p class="prices-list__text">from 300 uah.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Beard trim</p>
-                <p class="prices-item-text">from 300 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Beard trim</p>
+                <p class="prices-list__text">from 300 uah.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Mustache trim</p>
-                <p class="prices-item-text">from 200 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Mustache trim</p>
+                <p class="prices-list__text">from 200 uah.</p>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Straight razor shave</p>
-                <p class="prices-item-text">from 200 uah.</p>
+              <li class="prices-list__item">
+                <p class="prices-list__text">Straight razor shave</p>
+                <p class="prices-list__text">from 200 uah.</p>
               </li>
             </ul>
           </div>
 
-          <button type="button" class="btn prices-btn">Online-booking</button>
+          <button type="button" class="btn prices__btn">Online-booking</button>
         </div>
       </section>
 
@@ -224,20 +232,20 @@
       </section>
       <section id="barbers" class="barbers section">
         <div class="container">
-          <p class="barbers-pre-title pre-title">
+          <p class="barbers__pre-title pre-title pre-title--color-dark">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="barbers-title title">Our barbers</h2>
-          <ul class="barbers-list list">
-            <li class="barbers-item">
-              <div class="barbers-top-wrap">
+          <h2 class="barbers__title title">Our barbers</h2>
+          <ul class="people list">
+            <li class="people__item">
+              <div class="people__top-wrap">
                 <img
                   src="./img/barbers-img-1.jpeg"
                   alt="haircut"
                   width="370"
                   height="346"
                 />
-                <p class="barbers-top-text">
+                <p class="people__top-text">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Praesentium dicta voluptatum asperiores minima ad, doloremque
                   quo cumque laboriosam sunt? Itaque nesciunt ex tenetur
@@ -245,55 +253,55 @@
                 </p>
               </div>
 
-              <h3 class="barbers-item-title">Michele Doe</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
-              <ul class="barbers-socials list">
-                <li class="barbers-socials-item">
-                  <a href="" class="barbers-socials-link link">
-                    <svg class="barbers-socials-icon" width="20" height="20">
+              <h3 class="people__title">Michele Doe</h3>
+              <p class="people__text">Extreme Barber</p>
+              <ul class="people__socials socials list">
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./img/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="barbers-socials-item">
-                  <a href="" class="barbers-socials-link link"
-                    ><svg class="barbers-socials-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a href="" class="socials__link link"
+                    ><svg class="socials__icon" width="20" height="20">
                       <use href="./img/icons.svg#icon-facebook"></use></svg
                   ></a>
                 </li>
-                <li class="barbers-socials-item">
-                  <a href="" class="barbers-socials-link link"
-                    ><svg class="barbers-socials-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a href="" class="socials__link link"
+                    ><svg class="socials__icon" width="20" height="20">
                       <use href="./img/icons.svg#icon-twitter"></use></svg
                   ></a>
                 </li>
-                <li class="barbers-socials-item">
-                  <a href="" class="barbers-socials-link link"
-                    ><svg class="barbers-socials-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a href="" class="socials__link link"
+                    ><svg class="socials__icon" width="20" height="20">
                       <use href="./img/icons.svg#icon-linkedin"></use></svg
                   ></a>
                 </li>
               </ul>
             </li>
-            <li class="barbers-item">
+            <li class="people__item">
               <img
                 src="./img/barbers-img-2.jpeg"
                 alt="haircut"
                 width="370"
                 height="346"
               />
-              <h3 class="barbers-item-title">John Smith</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
+              <h3 class="people__title">John Smith</h3>
+              <p class="people__text">Extreme Barber</p>
             </li>
-            <li class="barbers-item">
+            <li class="people__item">
               <img
                 src="./img/barbers-img-3.jpeg"
                 alt="haircut"
                 width="370"
                 height="346"
               />
-              <h3 class="barbers-item-title">Alan Black</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
+              <h3 class="people__title">Alan Black</h3>
+              <p class="people__text">Extreme Barber</p>
             </li>
           </ul>
         </div>
