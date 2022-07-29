@@ -1,25 +1,19 @@
 .pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-}
+  @include font(11px, 600, 1.36, 0.1em);
+  @extend %list;
+  &::before {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: currentColor;
+    margin-right: 20px;
+  }
+  &--color-light {
+    color: rgba(157, 164, 189, 0.6);
+  }
 
-.pre-title--color-light {
-  color: rgba(157, 164, 189, 0.6);
-}
-
-.pre-title--color-dark {
-  color: #303030;
-}
-
-.pre-title::before {
-  content: '';
-  height: 1px;
-  width: 60px;
-  background: currentColor;
-  margin-right: 20px;
+  &--color-dark {
+    color: #303030;
+  }
 }

@@ -34,12 +34,16 @@
   letter-spacing: 0.1em;
   color: #ffffff;
   transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: #ff6c00;
-}
+// .navigation__link:hover,
+// .navigation__link:focus {
+//   color: #ff6c00;
+// }
 
 /* .header-tel {
   font-weight: 600;

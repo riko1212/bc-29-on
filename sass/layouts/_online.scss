@@ -21,29 +21,26 @@
   margin-bottom: 44px;
   background-color: transparent;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  &:focus {
+    border-color: #ffffff;
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+  &::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+  }
 }
 
 .online-input {
   width: 265px;
   height: 24px;
   padding-bottom: 8px;
-}
-
-.online-field:focus {
-  border-color: #ffffff;
-}
-
-.online-field:focus::placeholder {
-  color: #ffffff;
-}
-
-.online-field::placeholder {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.4);
 }
 
 .online-text {
