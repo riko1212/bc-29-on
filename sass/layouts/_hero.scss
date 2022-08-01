@@ -1,13 +1,28 @@
 .hero__container {
   display: flex;
+  padding: 0;
+  @include mobile {
+    width: 100%;
+  }
+  @include tablet {
+    width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }
 
 .soc {
-  width: 90px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 40px;
-  padding-left: 26px;
+  display: none;
+  @include tablet {
+    width: 90px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    padding-left: 26px;
+  }
 }
 
 .soc__list {
@@ -37,17 +52,54 @@
 }
 
 .hero__content {
-  padding: 272px 100px 206px;
+  padding: 208px 30px 209px;
   background-color: #8c8484;
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url(../img/hero-bg.jpeg);
+    url(../img/hero-bg-mob.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   flex-grow: 1;
+  @include retina {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero-bg-mob-2x.jpeg);
+  }
+  @include tablet {
+    padding: 272px 100px 237px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero-bg-tab.jpeg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/hero-bg-tab-2x.jpeg);
+    }
+  }
+  @include desktop {
+    padding: 272px 100px 208px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/hero-bg.jpeg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/hero-bg-2x.jpeg);
+    }
+  }
 }
 
 .hero__pre-title {
@@ -56,27 +108,26 @@
 
 .hero__title {
   font-family: 'Raleway', sans-serif;
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #ffffff;
   margin-bottom: var(--typical-margin);
   display: flex;
   align-items: baseline;
-  &::before {
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/about-img-1.jpeg);
-    background-size: cover;
+  @include mobile {
+    font-size: 48px;
   }
-
-  &::after {
-    content: '';
+  @include desktop {
+    font-size: 72px;
+    line-height: 1.18;
   }
 }
 
 .hero__after-title {
   color: #9da4bd;
-  max-width: 360px;
+  max-width: 336px;
+  @include tablet {
+    max-width: 370px;
+  }
 }
