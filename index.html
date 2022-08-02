@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a href="" class="logo header__logo">
           <svg class="logo__icon" width="68" height="55">
@@ -62,8 +62,78 @@
             Online-booking
           </button>
         </div>
+        <button type="button" class="open-btn">
+          <svg class="open-btn__icon" width="40" height="40">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="close-btn">
+              <svg class="close-btn__icon" width="40" height="40">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="#about" class="mob-menu__link link">About</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a href="#prices" class="mob-menu__link link"
+                    >Services and prices</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="#barbers" class="mob-menu__link link current"
+                    >Barbers</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="#contacts" class="mob-menu__link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu__bottom">
+            <div class="mob-connect">
+              <a href="tel:+380441111111" class="mob-connect__tel link"
+                >+38 044 111 11 11</a
+              >
+              <button
+                type="button"
+                data-modal-open
+                class="btn mob-connect__btn"
+              >
+                Online-booking
+              </button>
+            </div>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mob-soc-list__link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-list__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="mob-soc-list__link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container hero__container">
@@ -530,5 +600,6 @@
       AOS.init();
     </script>
     <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
